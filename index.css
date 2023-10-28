@@ -357,6 +357,26 @@ code{
         place-items: center;
     }
 
+    .imgg-1 img:hover{
+        height: 280px;
+        filter: blur(0px);
+    }
+    
+    .imgg-2 img:hover{
+        height: 280px;
+        filter: blur(0px);
+    }
+    
+    .imgg-3 img:hover{
+        height: 280px;
+        filter: blur(0px);
+    }
+    
+    .imgg-4 img:hover{
+        height: 280px;
+        filter: blur(0px);
+    }
+
     .world{
         width: 400px;
     }
