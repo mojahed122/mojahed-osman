@@ -336,7 +336,7 @@ code{
 }
 
 
-@media (min-width: 320px) and (max-width: 900px){
+@media (min-width: 120px) and (max-width: 700px){
     .container{
         max-width: 1100px;
     }
