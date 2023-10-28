@@ -334,3 +334,31 @@ code{
 ::-webkit-scrollbar-thumb{
     background: rgb(6, 147, 227);
 }
+
+
+@media (min-width: 320px) and (max-width: 900px){
+    .container{
+        max-width: 1100px;
+    }
+
+    .header{
+        position: fixed;
+        top: 0;
+        max-width: 1100px;
+    }
+
+    #all-fille{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 10px auto;
+        grid-template-areas: "front googel" "paid project";
+        gap: 10px;
+        height: 100vh;
+        place-items: center;
+    }
+
+    .world{
+        width: 600px;
+    }
+
+}
