@@ -338,13 +338,13 @@ code{
 
 @media (min-width: 120px) and (max-width: 700px){
     .container{
-        max-width: 1100px;
+        max-width: 740px;
     }
 
     .header{
         position: fixed;
         top: 0;
-        max-width: 1100px;
+        max-width: 740px;
     }
 
     #all-fille{
@@ -358,7 +358,23 @@ code{
     }
 
     .world{
-        width: 600px;
+        width: 400px;
+    }
+
+    .about-me{
+        height: 250px;
+        border-radius: 10px;
+        width: 500px;
+        
+    }
+    
+
+    .image img{
+        width: 200px;
+    }
+
+    .imagee img{
+        width: 250px;
     }
 
 }
