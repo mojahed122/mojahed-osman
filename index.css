@@ -224,7 +224,7 @@ samp{
     margin-top: 200px;
     padding: 0;
     box-shadow: 0px 2px 10px 2px #485051;
-    filter: blur(0.8px);
+    filter: blur(0.2px);
     transition: all 0.8s ease-in-out;
 }
 
