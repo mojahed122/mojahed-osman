@@ -338,13 +338,13 @@ code{
 
 @media (min-width: 320px) and (max-width: 1100px){
     .container{
-        width: 1040px;
+        width: 1000px;
     }
 
     .header{
         position: fixed;
         top: 0;
-        width: 1040px;
+        width: 1000px;
     }
 
     #react{
@@ -385,14 +385,14 @@ code{
     }
 
     .world{
-        width: 900px;
+        width: 1000px;
         text-indent: 10px;
     }
 
     .about-me{
         height: 250px;
         border-radius: 10px;
-        width: 900px;
+        width: 1000px;
         text-indent: 10px;
     }
     
