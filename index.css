@@ -347,6 +347,13 @@ code{
         width: 1040px;
     }
 
+    #react{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 700px;
+    }
+
     #all-fille{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -378,13 +385,13 @@ code{
     }
 
     .world{
-        width: 400px;
+        width: 800px;
     }
 
     .about-me{
         height: 250px;
         border-radius: 10px;
-        width: 500px;
+        width: 800px;
         
     }
     
