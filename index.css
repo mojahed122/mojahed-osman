@@ -338,11 +338,14 @@ code{
 
 
 @media screen 
-and (device-width: 360px) 
-and (device-height: 640px) 
-and (min-device-width: 320px) 
-and (max-device-width: 480px)
-and (-webkit-device-pixel-ratio: 2){
+    and (device-width: 360px) 
+    and (device-height: 640px) 
+    and (-webkit-device-pixel-ratio: 2)
+    and (min-device-width: 320px) 
+    and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2){
+
+
     .container{
         width: 640px;
     }
@@ -353,12 +356,6 @@ and (-webkit-device-pixel-ratio: 2){
         width: 640px;
     }
 
-    #react{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 640px;
-    }
 
     #all-fille{
         display: grid;
@@ -391,14 +388,14 @@ and (-webkit-device-pixel-ratio: 2){
     }
 
     .world{
-        width: 640px;
+        width: 440px;
         text-indent: 10px;
     }
 
     .about-me{
         height: 250px;
         border-radius: 10px;
-        width: 640px;
+        width: 440px;
         text-indent: 10px;
     }
     
