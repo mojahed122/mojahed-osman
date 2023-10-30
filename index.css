@@ -398,6 +398,13 @@ code{
         width: 250px;
         text-indent: 10px;
     }
+
+    #about{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 250px;
+    }
     
 
     .image img{
