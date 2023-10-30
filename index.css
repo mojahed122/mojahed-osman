@@ -10,6 +10,7 @@ html{
 
 body{
     background-color: rgb(18, 14, 38);
+    
 }
 
 .container{
@@ -336,22 +337,27 @@ code{
 }
 
 
-@media (min-width: 320px) and (max-width: 1100px){
+@media screen 
+and (device-width: 360px) 
+and (device-height: 640px) 
+and (min-device-width: 320px) 
+and (max-device-width: 480px)
+and (-webkit-device-pixel-ratio: 2){
     .container{
-        width: 1000px;
+        width: 640px;
     }
 
     .header{
         position: fixed;
         top: 0;
-        width: 1000px;
+        width: 640px;
     }
 
     #react{
         display: flex;
         align-items: center;
         justify-content: space-around;
-        width: 700px;
+        width: 640px;
     }
 
     #all-fille{
@@ -385,14 +391,14 @@ code{
     }
 
     .world{
-        width: 1000px;
+        width: 640px;
         text-indent: 10px;
     }
 
     .about-me{
         height: 250px;
         border-radius: 10px;
-        width: 1000px;
+        width: 640px;
         text-indent: 10px;
     }
     
