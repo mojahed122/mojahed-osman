@@ -388,14 +388,14 @@ code{
     }
 
     .world{
-        width: 440px;
+        width: 250px;
         text-indent: 10px;
     }
 
     .about-me{
         height: 250px;
         border-radius: 10px;
-        width: 440px;
+        width: 250px;
         text-indent: 10px;
     }
     
