@@ -385,14 +385,15 @@ code{
     }
 
     .world{
-        width: 800px;
+        width: 900px;
+        text-indent: 10px;
     }
 
     .about-me{
         height: 250px;
         border-radius: 10px;
-        width: 800px;
-        
+        width: 900px;
+        text-indent: 10px;
     }
     
 
