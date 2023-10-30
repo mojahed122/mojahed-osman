@@ -338,7 +338,7 @@ code{
 
 @media (min-width: 20px) and (max-width: 900px){
     .container{
-        width: 0px;
+        width: 20px;
     }
 
     .header{
