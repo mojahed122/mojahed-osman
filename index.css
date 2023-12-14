@@ -706,7 +706,258 @@ code{
 }
 
 @media (max-width: 540px){
+    ul li {
+        background-color: rgb(0, 23, 128);
+        width: 250px;
+    }
 
+
+    .logo img{
+        width: 220px;
+    }
+
+
+    li a{
+        font-size: 50px;
+        width: auto;
+    }
+    
+
+    #container-2{
+        text-align: center;
+        height: 160vh;
+    }
+
+    #container-2 pre{
+        font-size: 50px;
+    }
+
+
+    #container-2 h2{
+        font-size: 90px;
+    }
+
+    #container-2  p{
+        width: auto;
+        font-size: 30px;
+    }
+
+    #container-2 .button{
+        top: 50px;
+        position: relative;
+    }
+
+
+    #container-2 .button a{
+        padding: 20px;
+        font-size: 50px;
+    }
+
+    #about{
+        width: auto;
+        height: 160vh;
+    }
+
+    #about .about-me{
+        font-size: 37px;
+        width: auto;
+        
+    }
+
+    .about-me ,.image img{
+        width: 600px;
+        gap: 50px;
+    }
+
+    .about-me{
+        height: 40vh;
+        width: auto;
+        height: auto;
+    }
+
+    #react{
+        width: auto;
+        height: 160vh;
+    }
+
+    #react, .imagee img{
+        width: 600px;
+        gap: 50px;
+    }
+
+    #react, .world{
+        font-size: 37px;
+        width: auto;
+        height: auto;
+    }
+
+    samp{
+        font-size: 95px;
+    }
+
+    #all-fille{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        place-items: center;
+        gap: 10px;
+    }
+
+    .imgg-1 img,.imgg-2 img ,.imgg-3 img,
+    .imgg-4 img{
+        width: 650px;
+        height: 450px;
+        z-index: 2;
+    }
+
+    #contact-me .get-in-touch{
+        font-size: 4pc;
+    }
+
+    #contact-me .contact-info{
+        font-size: 20px;
+    }
+
+    #contact-me .contact-mail{
+        margin-top: 20px;
+    }
+
+    #contact-me .contact-mail a{
+        font-size: 40px;
+    }
+
+    footer .made{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .container{
+        min-width: 250px;
+    }
+
+    ul li {
+        background-color: rgb(0, 23, 128);
+        width: 250px;
+    }
+
+
+    .logo img{
+        width: 220px;
+    }
+
+
+    li a{
+        font-size: 50px;
+        width: auto;
+    }
+    
+
+    #container-2{
+        text-align: center;
+        height: 160vh;
+    }
+
+    #container-2 pre{
+        font-size: 50px;
+    }
+
+
+    #container-2 h2{
+        font-size: 90px;
+    }
+
+    #container-2  p{
+        width: auto;
+        font-size: 30px;
+    }
+
+    #container-2 .button{
+        top: 50px;
+        position: relative;
+    }
+
+
+    #container-2 .button a{
+        padding: 20px;
+        font-size: 50px;
+    }
+
+    #about{
+        width: auto;
+        height: 160vh;
+    }
+
+    #about .about-me{
+        font-size: 37px;
+        width: auto;
+        
+    }
+
+    .about-me ,.image img{
+        width: 600px;
+        gap: 50px;
+    }
+
+    .about-me{
+        height: 40vh;
+        width: auto;
+        height: auto;
+    }
+
+    #react{
+        width: auto;
+        height: 160vh;
+    }
+
+    #react, .imagee img{
+        width: 600px;
+        gap: 50px;
+    }
+
+    #react, .world{
+        font-size: 37px;
+        width: auto;
+        height: auto;
+    }
+
+    samp{
+        font-size: 95px;
+    }
+
+    #all-fille{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        place-items: center;
+        gap: 10px;
+    }
+
+    .imgg-1 img,.imgg-2 img ,.imgg-3 img,
+    .imgg-4 img{
+        width: 650px;
+        height: 450px;
+        z-index: 2;
+    }
+
+    #contact-me .get-in-touch{
+        font-size: 4pc;
+    }
+
+    #contact-me .contact-info{
+        font-size: 20px;
+    }
+
+    #contact-me .contact-mail{
+        margin-top: 20px;
+    }
+
+    #contact-me .contact-mail a{
+        font-size: 40px;
+    }
+
+    footer .made{
+        font-size: 40px;
+    }
 }
 
 /* @media (max-width: 540px)  {
