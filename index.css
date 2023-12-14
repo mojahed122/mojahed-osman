@@ -192,14 +192,15 @@ samp{
 #all-fille{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 20% 40% 25% 20%;
-    grid-template-areas: "front googel paid project";
+    /* grid-template-rows: 20% 40% 25% 20%; */
+    /* grid-template-areas: "front googel paid project"; */
     gap: 20px;
-    height: 100vh;
+    min-height: 100vh;
     margin-left: 40px;
+    
 }
 
-.imgg-1{
+/* .imgg-1{
     grid-area: front;
 }
 
@@ -213,7 +214,7 @@ samp{
 
 .imgg-4{
     grid-area: project;
-}
+} */
 
 .imgg-1 img,
 .imgg-2 img,
@@ -227,6 +228,8 @@ samp{
     box-shadow: 0px 2px 10px 2px #485051;
     filter: blur(0.2px);
     transition: all 0.8s ease-in-out;
+    z-index: 2;
+    overflow: hidden;
 }
 
 .imgg-1 img:hover{
@@ -337,34 +340,455 @@ code{
 }
 
 
-@media screen 
-    and (device-width: 360px) 
-    and (device-height: 640px) 
-    and (-webkit-device-pixel-ratio: 2)
-    and (min-device-width: 320px) 
-    and (max-device-width: 480px)
-    and (-webkit-min-device-pixel-ratio: 2){
 
+@media (max-width: 1200px){
+    html{
+        font-size: 25px;
+    }
+    
+.container{
+    max-width: 1120px;
+}
 
-    .container{
-        width: 640px;
+    nav, ul li{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
     }
 
-    .header{
-        position: fixed;
-        top: 0;
-        width: 640px;
+    li a{
+        font-size: 28px;
+        text-align: right;
     }
 
+    #container-2{
+        width: 1120px;
+    }
+
+    #container-2 pre{
+        font-size: 40px;
+    }
+
+
+    #container-2 h2{
+        font-size: 80px;
+    }
+
+    #container-2  p{
+        width: 880px;
+        font-size: 30px;
+    }
+
+    #container-2 .button{
+        margin-top: 30px;
+    }
+
+
+    #container-2 .button a{
+        padding: 20px;
+        font-size: 40px;
+    }
+
+    #about{
+        width: auto;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    #about .about-me{
+        font-size: 20px;
+        width: 650px;
+    }
+
+    #react{
+        justify-content: center;
+        gap: 30px;
+    }
+
+    #react, .world{
+        font-size: 17px;
+        width: auto;
+    }
 
     #all-fille{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: 10px auto;
-        grid-template-areas: "front googel" "paid project";
-        gap: 10px;
-        height: 100vh;
         place-items: center;
+        
+    }
+
+    #contact-me .get-in-touch{
+        font-size: 4pc;
+    }
+
+    #contact-me .contact-info{
+        font-size: 20px;
+    }
+
+    #contact-me .contact-mail{
+        margin-top: 20px;
+    }
+
+    #contact-me .contact-mail a{
+        font-size: 40px;
+    }
+
+    footer .made{
+        font-size: 40px;
+    }
+
+    footer code{
+        font-size: 40px;
+    }
+
+}
+
+@media (max-width: 990px){
+    .container{
+        min-width: 840px;
+    }
+
+    nav{
+        display: block;
+        background-color: transparent;
+    }
+
+    ul{
+        width: auto;
+        background-color: transparent;
+        display: block;
+    }
+
+    ul li {
+        background-color: green;
+        width: 250px;
+    }
+
+    li a{
+        font-size: 38px;
+        width: auto;
+    }
+
+    #container-2{
+        text-align: center;
+        height: 120vh;
+    }
+
+    #container-2 pre{
+        font-size: 40px;
+    }
+
+
+    #container-2 h2{
+        font-size: 80px;
+    }
+
+    #container-2  p{
+        width: 880px;
+        font-size: 30px;
+    }
+
+    #container-2 .button{
+        margin-top: 30px;
+    }
+
+
+    #container-2 .button a{
+        padding: 20px;
+        font-size: 40px;
+    }
+
+    #about{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        gap: 50px;
+        position: relative;
+        margin-bottom: 50px;
+    }
+
+    #about .about-me{
+        font-size: 35px;
+        width: auto;
+        
+    }
+
+    .about-me ,.image img{
+        width: 600px;
+    }
+
+    .about-me{
+        height: 40vh;
+        width: auto;
+        height: auto;
+    }
+
+    #react{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        gap: 50px;
+        position: relative;
+        margin-bottom: 50px;
+    }
+
+    #react, .imagee img{
+        width: 600px;
+    }
+
+    #react, .world{
+        font-size: 30px;
+        width: auto;
+        height: auto;
+    }
+
+    #all-fille{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        place-items: center;
+        gap: 10px;
+    }
+
+    .imgg-1 img,.imgg-2 img ,.imgg-3 img,
+    .imgg-4 img{
+        width: 650px;
+        height: 450px;
+        z-index: 2;
+    }
+
+    #contact-me .get-in-touch{
+        font-size: 4pc;
+    }
+
+    #contact-me .contact-info{
+        font-size: 20px;
+    }
+
+    #contact-me .contact-mail{
+        margin-top: 20px;
+    }
+
+    #contact-me .contact-mail a{
+        font-size: 40px;
+    }
+
+    footer .made{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px){
+
+    ul li {
+        background-color: rgb(0, 23, 128);
+        width: 250px;
+    }
+
+
+    .logo img{
+        width: 220px;
+    }
+
+
+    li a{
+        font-size: 50px;
+        width: auto;
+    }
+    
+
+    #container-2{
+        text-align: center;
+        height: 160vh;
+    }
+
+    #container-2 pre{
+        font-size: 50px;
+    }
+
+
+    #container-2 h2{
+        font-size: 90px;
+    }
+
+    #container-2  p{
+        width: auto;
+        font-size: 30px;
+    }
+
+    #container-2 .button{
+        top: 50px;
+        position: relative;
+    }
+
+
+    #container-2 .button a{
+        padding: 20px;
+        font-size: 50px;
+    }
+
+    #about{
+        width: auto;
+        height: 160vh;
+    }
+
+    #about .about-me{
+        font-size: 37px;
+        width: auto;
+        
+    }
+
+    .about-me ,.image img{
+        width: 600px;
+        gap: 50px;
+    }
+
+    .about-me{
+        height: 40vh;
+        width: auto;
+        height: auto;
+    }
+
+    #react{
+        width: auto;
+        height: 160vh;
+    }
+
+    #react, .imagee img{
+        width: 600px;
+        gap: 50px;
+    }
+
+    #react, .world{
+        font-size: 37px;
+        width: auto;
+        height: auto;
+    }
+
+    samp{
+        font-size: 95px;
+    }
+
+    #all-fille{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        place-items: center;
+        gap: 10px;
+    }
+
+    .imgg-1 img,.imgg-2 img ,.imgg-3 img,
+    .imgg-4 img{
+        width: 650px;
+        height: 450px;
+        z-index: 2;
+    }
+
+    #contact-me .get-in-touch{
+        font-size: 4pc;
+    }
+
+    #contact-me .contact-info{
+        font-size: 20px;
+    }
+
+    #contact-me .contact-mail{
+        margin-top: 20px;
+    }
+
+    #contact-me .contact-mail a{
+        font-size: 40px;
+    }
+
+    footer .made{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 540px){
+
+}
+
+/* @media (max-width: 540px)  {
+
+
+    .container{
+        max-width: 240px;
+    }
+
+    
+
+    .logo img{
+        margin-left: -47px;
+        width: 100px;
+    }
+    
+
+    nav,ul, li a{
+        display: block;
+        font-size: 15px;
+        margin: 5px;
+        padding: 0;
+    }
+
+    nav{
+        width: 0%;
+        background-color: red;
+    }
+    ul li{
+        background-color: rgb(125, 54, 54);
+        width: 50%;
+        
+    }
+    #container-2{
+        height: 190vh;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 240px;
+        font-size: 10px;
+    }
+
+    #about{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        max-width: 240px;
+    }
+
+
+    .about-me{
+        height: 250px;
+        border-radius: 10px;
+        width: 240px;
+        text-indent: 10px;
+        font-size: 15px;
+    }
+
+    #react{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 90vh;
+        width: 240px;
+    }
+
+    .imagee img{
+        width: 200px;
+    }
+
+
+    #all-fille{
+        display: block;
+        height: 350vh;
+        max-width: 240px;
+    }
+
+    img .hover-img{
+        width: 20px;
     }
 
     .imgg-1 img:hover{
@@ -387,32 +811,46 @@ code{
         filter: blur(0px);
     }
 
-    .world{
-        width: 250px;
-        text-indent: 10px;
+
+    #contact-me{
+        height: 60vh;
+        width: 240px;
     }
 
-    .about-me{
-        height: 250px;
-        border-radius: 10px;
-        width: 250px;
-        text-indent: 10px;
-    }
-
-    #about{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 250px;
+    .contact-mail{
+        text-align: center;
+        margin-top: 10vh;
     }
     
+
+    .world{
+        width: 240px;
+        text-indent: 10px;
+    }
+
+
+    .footer,.made,.mojahed{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 240px;
+    }
+    
+
+    code{
+        font-size: 20px;
+        color: rgb(216, 214, 214);
+        text-transform: capitalize;
+        font-weight: bold;
+        max-width: 240px;
+        text-align: center;
+    }
 
     .image img{
         width: 200px;
     }
 
-    .imagee img{
-        width: 250px;
-    }
+    
 
-}
+} */
